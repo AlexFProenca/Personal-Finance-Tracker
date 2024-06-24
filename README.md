@@ -1,57 +1,64 @@
-# Personal-Finance-Tracker
-The Personal Finance Tracker is a web application designed to help users manage their finances efficiently. It enables users to track their income and expenses, categorize transactions, and view a summary of their financial status. This project leverages the power of Python for backend processing, React for the frontend, and JavaScript to enhance user interactions. The application offers user authentication, secure data management, and a responsive interface.
+### Project Introduction: Personal Finance Tracker
 
-Technologies Used
-Backend: Python with Flask, SQLAlchemy, and Flask-Migrate.
-Frontend: React with React Router for navigation and Axios for API communication.
-Database: SQLite for development and PostgreSQL for production.
-Authentication: JWT (JSON Web Token) for secure user authentication.
-Deployment: Docker for containerization and Heroku for hosting.
-Features
-User Registration and Authentication
+#### Overview
 
-Secure user registration and login using JWT.
-Password hashing for secure storage (bcrypt).
-Dashboard
+The **Personal Finance Tracker** is a web application designed to help users manage their finances efficiently. It enables users to track their income and expenses, categorize transactions, and view a summary of their financial status. This project leverages the power of Python for backend processing, React for the frontend, and JavaScript to enhance user interactions. The application offers user authentication, secure data management, and a responsive interface.
 
-Overview of financial status with total income, total expenses, and balance.
-Visualization of expenses by category.
-Transaction Management
+#### Technologies Used
 
-Add, edit, and delete income and expense transactions.
-Categorize transactions for better organization.
-Responsive Design
+- **Backend**: Python with Flask, SQLAlchemy, and Flask-Migrate.
+- **Frontend**: React with React Router for navigation and Axios for API communication.
+- **Database**: SQLite for development and PostgreSQL for production.
+- **Authentication**: JWT (JSON Web Token) for secure user authentication.
+- **Deployment**: Docker for containerization and Heroku for hosting.
 
-User-friendly interface that works seamlessly on both desktop and mobile devices.
-Project Structure
-Backend:
+#### Features
 
-app/__init__.py: Initializes Flask app and extensions.
-app/models.py: Defines database models for users and transactions.
-app/routes.py: Contains routes for user authentication and transaction management.
-run.py: Entry point for running the Flask app.
-Frontend:
+1. **User Registration and Authentication**
+   - Secure user registration and login using JWT.
+   - Password hashing for secure storage (bcrypt).
 
-src/components/Login.js: Component for user login.
-src/components/Register.js: Component for user registration.
-src/components/Dashboard.js: Component for displaying the dashboard and managing transactions.
-src/App.js: Main application component with routing.
-How to Run the Project
-Backend Setup:
+2. **Dashboard**
+   - Overview of financial status with total income, total expenses, and balance.
+   - Visualization of expenses by category.
 
-Clone the repository: git clone <repository-url>
-Navigate to the backend directory: cd finance-tracker-backend
-Set up the virtual environment: python -m venv venv
-Activate the virtual environment: source venv/bin/activate (On Windows use venv\Scripts\activate)
-Install the required packages: pip install -r requirements.txt
-Initialize the database: flask db init, flask db migrate -m "Initial migration", flask db upgrade
-Run the Flask app: python run.py
-Frontend Setup:
+3. **Transaction Management**
+   - Add, edit, and delete income and expense transactions.
+   - Categorize transactions for better organization.
 
-Navigate to the frontend directory: cd finance-tracker-frontend
-Install the required packages: npm install
-Start the React app: npm start
-Access the Application:
+4. **Responsive Design**
+   - User-friendly interface that works seamlessly on both desktop and mobile devices.
 
-Open your web browser and navigate to http://localhost:3000 to access the frontend.
-The backend will be running at http://localhost:5000.
+#### Project Structure
+
+- **Backend**: 
+  - `app/__init__.py`: Initializes Flask app and extensions.
+  - `app/models.py`: Defines database models for users and transactions.
+  - `app/routes.py`: Contains routes for user authentication and transaction management.
+  - `run.py`: Entry point for running the Flask app.
+
+- **Frontend**:
+  - `src/components/Login.js`: Component for user login.
+  - `src/components/Register.js`: Component for user registration.
+  - `src/components/Dashboard.js`: Component for displaying the dashboard and managing transactions.
+  - `src/App.js`: Main application component with routing.
+
+#### How to Run the Project
+
+1. **Backend Setup**:
+   - Clone the repository: `git clone <repository-url>`
+   - Navigate to the backend directory: `cd finance-tracker-backend`
+   - Set up the virtual environment: `python -m venv venv`
+   - Activate the virtual environment: `source venv/bin/activate` (On Windows use `venv\Scripts\activate`)
+   - Install the required packages: `pip install -r requirements.txt`
+   - Initialize the database: `flask db init`, `flask db migrate -m "Initial migration"`, `flask db upgrade`
+   - Run the Flask app: `python run.py`
+
+2. **Frontend Setup**:
+   - Navigate to the frontend directory: `cd finance-tracker-frontend`
+   - Install the required packages: `npm install`
+   - Start the React app: `npm start`
+
+3. **Access the Application**:
+   - Open your web browser and navigate to `http://localhost:3000` to access the frontend.
+   - The backend will be running at `http://localhost:5000`.
